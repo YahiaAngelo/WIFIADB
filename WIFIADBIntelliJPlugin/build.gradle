@@ -5,7 +5,7 @@ buildscript {
 }
 
 plugins {
-    id "org.jetbrains.intellij" version "0.0.25"
+    id "org.jetbrains.intellij" version "0.5.0"
 }
 
 apply plugin: 'idea'
@@ -13,7 +13,7 @@ apply plugin: 'org.jetbrains.intellij'
 apply plugin: 'java'
 
 group 'adb.wifi.woaiwhz'
-version '1.1'
+version '1.1.1'
 
 repositories {
     mavenCentral()
@@ -25,13 +25,13 @@ dependencies {
 }
 
 compileJava {
-    sourceCompatibility = 1.7
-    targetCompatibility = 1.7
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
 //    options.bootClasspath = "S:/JAVA/jdk8/jre/lib/rt.jar"
 }
 
 intellij {
-    version '14.1.5'
+    version '201.8743.12'
     plugins 'android'
     updateSinceUntilBuild false
     pluginName 'WIFI_ADB_ULTIMATE'

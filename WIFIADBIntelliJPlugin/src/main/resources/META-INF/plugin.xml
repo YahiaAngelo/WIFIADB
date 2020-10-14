@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<idea-plugin version="2">
+<idea-plugin>
     <id>adb.wifi.woaiwhz</id>
     <name>WIFI ADB ULTIMATE</name>
-    <version>1.1</version>
+    <version>1.1.1</version>
     <vendor email="huazhou19@gmail.com" url="https://github.com/Sausure/WIFIADB/tree/master/WIFIADBIntelliJPlugin">
         HuaZhou Wang - (Sausure)
     </vendor>
@@ -16,12 +16,13 @@
     ]]></description>
 
     <change-notes><![CDATA[
+        1.1.1: Add android studio 4.1 compatibility.<br>
         1.1: Fix compatibility bug.<br>
         1.0: Initial release.<br>
     ]]>
     </change-notes>
 
-    <idea-version since-build="131"/>
+    <idea-version since-build="201.8743.12"/>
 
     <extensions defaultExtensionNs="com.intellij">
         <defaultProjectTypeProvider type="Android"/>
@@ -33,6 +34,6 @@
                 />
     </extensions>
 
+    <depends>com.intellij.modules.platform</depends>
     <depends>org.jetbrains.android</depends>
-
 </idea-plugin>
